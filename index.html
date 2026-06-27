@@ -1,112 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Our Little World ❤️</title>
+    <title>Our Story</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
-
-    <!-- Cute Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Great+Vibes&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
 
     <!-- Background -->
-    <div id="background"></div>
+    <div class="background"></div>
 
-    <!-- Floating Hearts -->
-    <div id="hearts"></div>
+    <!-- Landing Screen -->
+    <main class="landing">
 
-    <!-- Floating Stars -->
-    <div id="stars"></div>
+        <div class="card">
 
-    <!-- Welcome Screen -->
-    <section id="welcome">
-
-        <div class="envelope">
-
-            <div class="heart">
-                ❤️
+            <div class="envelope">
+                ✉
             </div>
 
-            <h1>Someone made something just for you</h1>
+            <p class="small-text">
+                Before you begin...
+            </p>
 
-            <button id="openButton">
+            <h1>
+                I made a little place where our memories live.
+            </h1>
+
+            <button class="open-btn">
                 Open
             </button>
 
         </div>
 
-    </section>
-
-    <!-- Homepage (hidden initially) -->
-
-    <section id="mainPage">
-
-        <h1 class="title">
-            Our Little World ❤️
-        </h1>
-
-        <p class="subtitle">
-            Every moment with you is my favorite memory.
-        </p>
-
-        <!-- Photos go here later -->
-        <div id="photoContainer">
-
-        </div>
-
-        <div class="buttons">
-
-            <button id="messageButton">
-                💌 Read My Letter
-            </button>
-
-            <button id="galleryButton">
-                📷 Memories
-            </button>
-
-            <button id="musicButton">
-                🎵 Music
-            </button>
-
-        </div>
-
-    </section>
-
-    <!-- Love Letter Popup -->
-
-    <div id="letterPopup">
-
-        <div class="letter">
-
-            <span id="closeLetter">
-                ✖
-            </span>
-
-            <h2>
-                To My Favorite Person ❤️
-            </h2>
-
-            <div id="letterContent">
-
-                Your message will go here...
-
-            </div>
-
-        </div>
-
-    </div>
+    </main>
 
     <script src="script.js"></script>
 
 </body>
-
 </html>
