@@ -78,3 +78,20 @@ letterBtn.addEventListener("click", () => {
     }, 100);
 
 });
+// ===== SCROLL REVEAL =====
+
+const allSections = document.querySelectorAll("section");
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }
+    });
+}, {
+    threshold: 0.15
+});
+
+allSections.forEach(section => {
+    observer.observe(section);
+});
