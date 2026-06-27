@@ -1,145 +1,161 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+/* ========== BASE RESET ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html{
-    scroll-behavior:smooth;
+body {
+    font-family: 'Inter', sans-serif;
+    background: #FAF7F2;
+    color: #3B2F2F;
+    overflow-x: hidden;
+    line-height: 1.6;
 }
 
-body{
-
-    background:#F7F3EE;
-
-    color:#3A302C;
-
-    font-family:'Inter',sans-serif;
-
-    min-height:100vh;
-
-    overflow:hidden;
-
+/* ========== GLOBAL SECTIONS ========== */
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    text-align: center;
 }
 
-/* subtle background */
-
-.grain{
-
-    position:fixed;
-    inset:0;
-
-    background:
-    radial-gradient(circle at top,#FFFDFB,#F7F3EE);
-
-    z-index:-1;
-
+/* ========== LANDING ========== */
+#landing {
+    background: radial-gradient(circle at top, #fffdf9, #FAF7F2);
 }
 
-.hero{
-
-    height:100vh;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    text-align:center;
-
-    padding:20px;
-
+.landing-content {
+    max-width: 700px;
 }
 
-.hero-content{
-
-    max-width:700px;
-
-    animation:fadeUp 1.4s ease;
-
+.subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    color: #CFA2A7;
+    margin-bottom: 10px;
 }
 
-.intro{
-
-    font-family:'Cormorant Garamond',serif;
-
-    font-size:28px;
-
-    color:#B7848C;
-
-    margin-bottom:18px;
-
+#landing h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 40px;
 }
 
-h1{
-
-    font-family:'Cormorant Garamond',serif;
-
-    font-size:58px;
-
-    line-height:1.15;
-
-    font-weight:700;
-
-    margin-bottom:40px;
-
+#beginBtn {
+    padding: 14px 38px;
+    border-radius: 999px;
+    border: none;
+    background: #D2A0A6;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
 
-button{
-
-    border:none;
-
-    background:#D7A4AE;
-
-    color:white;
-
-    padding:16px 42px;
-
-    border-radius:999px;
-
-    font-size:17px;
-
-    cursor:pointer;
-
-    transition:.35s;
-
+#beginBtn:hover {
+    transform: translateY(-3px);
+    background: #c38f96;
 }
 
-button:hover{
-
-    transform:translateY(-5px);
-
-    background:#C98E9A;
-
-    box-shadow:0 14px 40px rgba(201,142,154,.35);
-
+/* ========== HERO ========== */
+#hero {
+    gap: 30px;
 }
 
-@keyframes fadeUp{
-
-    from{
-
-        opacity:0;
-        transform:translateY(35px);
-
-    }
-
-    to{
-
-        opacity:1;
-        transform:translateY(0);
-
-    }
-
+#hero img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 18px;
+    object-fit: cover;
 }
 
-@media(max-width:768px){
+#hero h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
+    max-width: 700px;
+}
 
-    h1{
+#hero p {
+    max-width: 600px;
+    font-size: 18px;
+    opacity: 0.8;
+}
 
-        font-size:42px;
+/* ========== MOMENTS ========== */
+#moments {
+    background: #fffaf7;
+}
 
-    }
+#moments h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
 
+/* ========== LETTER ========== */
+#letter {
+    background: #FAF7F2;
+}
+
+#letter h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#letterBtn {
+    padding: 14px 34px;
+    border-radius: 999px;
+    border: 1px solid #D2A0A6;
+    background: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+#letterBtn:hover {
+    background: #D2A0A6;
+    color: white;
+}
+
+/* ========== GALLERY ========== */
+#gallery {
+    background: #fffaf7;
+}
+
+#gallery h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 40px;
+}
+
+/* ========== ENDING ========== */
+#ending h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+#ending p {
+    font-size: 18px;
+    opacity: 0.85;
+}
+
+#ending h3 {
+    margin-top: 30px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    color: #CFA2A7;
+}
+
+/* ========== IMAGE ========== */
+img {
+    max-width: 100%;
+    display: block;
 }
